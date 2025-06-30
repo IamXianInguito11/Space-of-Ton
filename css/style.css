@@ -1,0 +1,152 @@
+.gradient-background {
+  background: linear-gradient(300deg, #000000, #d716b0, #f1c40f);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+.custom-caption {
+  background: linear-gradient(to right, rgba(215, 22, 176, 0.7), rgba(0, 0, 0, 0.7));
+  padding: 2rem; /* increased padding for more breathing room */
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Make h3 stand out */
+.custom-caption h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+/* Style the paragraph with a bigger, quirkier feel */
+.custom-caption p {
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.custom-caption a.btn {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.4rem;
+  background: linear-gradient(300deg, #d716b0, #dcce04);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.custom-caption a.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(215, 22, 176, 0.5);
+  text-decoration: none;
+}
+
+.quirky-caption {
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  color: #000000; /* or use a shade from your site's palette */
+  padding-left: 0.5rem;
+}
+
+
+#contactme {
+  background: linear-gradient(to right, rgba(220, 206, 4, 0.2), rgba(215, 22, 176, 0.2), rgba(0, 0, 0, 0.05));
+  padding: 5rem 1rem;
+}
+
+
+#contactme h2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700;
+}
+
+#contactme p {
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+#contactme a.btn {
+  background: linear-gradient(to right, #dcee04, #d716b0);
+  border: none;
+  color: white;
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+#contactme a.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+.cont-anim img {
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+
+
+@media (max-width: 1000px) {
+  .custom-caption {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 90% !important;
+    text-align: center !important;
+    z-index: 10; /* Ensure it appears above image */
+  }
+
+  .custom-caption h3,
+  .custom-caption p,
+  .custom-caption a {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+}
+
+.carousel-item {
+  position: relative;
+  min-height: 400px; /* Or whatever ensures space for the caption */
+}
